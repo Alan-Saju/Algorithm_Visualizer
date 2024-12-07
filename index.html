@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css">
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Algorithm Visualizer</h1>
+  </header>
+  <main>
+    <section id="controls">
+      <button id="bubble-sort-btn">Run Bubble Sort</button>
+    </section>
+    <section id="visualizer">
+      <div id="array-container"></div>
+    </section>
+    <py-env>
+      - numpy
+    </py-env>
+    <py-script src="algorithms/bubble_sort.py"></py-script>
+  </main>
+</body>
+</html>
